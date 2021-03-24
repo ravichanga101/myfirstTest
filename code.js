@@ -9,7 +9,7 @@ const endpoint = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random';
     spinner.classList.remove('hidden');
     newQuoteButton.disabled = true;
   
-    try {
+    try { 
         var response = fetch(endpoint).then((data)=>{
                 
                 if (!data.ok) {
