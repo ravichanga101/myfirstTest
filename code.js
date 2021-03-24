@@ -12,7 +12,7 @@ const endpoint = 'https://api.whatdoestrumpthink.com/api/v1/quotes/random';
     try {  
         var response = fetch(endpoint).then((data)=>{
                 
-                if (!data.ok) {
+                if (!data.ok ) {
                     throw Error(data.statusText);
                 }
                 const p_json = data.json().then((obj)=>{
